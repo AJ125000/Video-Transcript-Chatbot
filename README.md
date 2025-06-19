@@ -29,7 +29,7 @@ A beginner-friendly Gradio app that turns any YouTube video into a conversationa
 1. **Clone the repo**  
    ```bash
    git clone https://github.com/AJ125000/Video-Transcript-Chatbot.git
-   cd yt-rag-chatbot
+   cd Video-Transcript-Chatbot
 2. **(Optional) Create a virtual environment**
    ```bash
    python -m venv venv
