@@ -6,3 +6,4 @@ tiktoken
 python-dotenv
 langchain-huggingface
 gradio
+flask
