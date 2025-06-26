@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Video-RAG Chatbot</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/milligram@1.4.1/dist/milligram.min.css">
+  <style>
+    body {margin: 2rem;}
+    #chatbox {height: 60vh; overflow-y: auto; border: 1px solid #ccc; padding: 1rem;}
+    .user   {color: #444;}
+    .bot    {color: #0a7;}
+  </style>
+</head>
+<body>
+  <h2>Video Transcript Chatbot (Flask)</h2>
+
+  <section id="init-section">
+    <input id="video" placeholder="YouTube URL or ID">
+    <input id="embed" placeholder="Embedding model"
+           value="sentence-transformers/all-MiniLM-L6-v2">
+    <input id="llm" placeholder="LLM repo id"
+           value="meta-llama/Llama-3.1-8B-Instruct">
+    <input id="token" placeholder="HF token (hf_...)" type="password">
+    <button id="start">Initialize</button>
+  </section>
+
+  <hr>
+
+  <div id="chatbox"></div>
+  <input id="prompt" placeholder="Ask a question..." style="width:80%">
+  <button id="send">Send</button>
+
+<script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>
